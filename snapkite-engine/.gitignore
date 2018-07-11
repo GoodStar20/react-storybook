@@ -3,6 +3,7 @@
 ###############################
 
 config.json
+config.json.save
 
 ###############################
 # Snapkite filters

@@ -22,6 +22,7 @@ module.exports = {
       exclude: path.resolve(__dirname, 'node_modules')
       }
     ]
-  }
+  },
 
+  devtool: 'sourcemap'
 };

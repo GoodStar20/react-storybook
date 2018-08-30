@@ -1,0 +1,13 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "description": "leave your life in the hands of an app",
+  "main": "index.js",
+  "repository": "https://github.com/koolamusic/snapterest",
+  "author": "Andrew Miracle",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "^6.24.1"
+  }
+}

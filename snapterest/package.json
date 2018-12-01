@@ -4,11 +4,11 @@
   "description": "A Pinterest Like Twitter Reader App",
   "main": "index.js",
   "dependencies": {
-    "debug": "^3.1.0",
+    "debug": "^3.2.6",
     "ms": "^2.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "webpack-cli": "^3.1.0"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -16,7 +16,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^4.16.5"
+    "webpack": "^4.26.1"
   },
   "scripts": {
     "start": "webpack -p --config webpack.config.js",

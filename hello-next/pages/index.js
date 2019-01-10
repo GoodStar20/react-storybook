@@ -2,12 +2,11 @@
 import Link from "next/link"
 
 // Import Header Component
-import Header from "../components/Header"
+import Layout from "../components/Layout.js"
 
 
 const Index = () => (
-	<div>
-	<Header />
+	<Layout>
 	 <h2>Hello Next.js</h2>
 	  <a href="/about">About Link using HREF</a>
 	<br />
@@ -25,7 +24,7 @@ const Index = () => (
 	 <p style={{ cursor: "pointer" }} >A Next/Link can accept anything that works with an onClick</p>
 	</Link>
 
-	</div>
+	</Layout>
 )
 
 export default Index

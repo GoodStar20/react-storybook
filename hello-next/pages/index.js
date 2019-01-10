@@ -1,8 +1,13 @@
 // Import the Next Link API
 import Link from "next/link"
 
+// Import Header Component
+import Header from "../components/Header"
+
+
 const Index = () => (
 	<div>
+	<Header />
 	 <h2>Hello Next.js</h2>
 	  <a href="/about">About Link using HREF</a>
 	<br />
@@ -10,6 +15,7 @@ const Index = () => (
 	<Link href="/about" style={{ fontSize: 40, fontWeight: 700 }}>
 	 <a>About Page Next/Link</a>
 	</Link>
+	<br />
 
 	<Link href="/about">
 	 <button>Goto about page using button on Next/Link</button>

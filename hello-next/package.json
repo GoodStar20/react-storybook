@@ -1,0 +1,18 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "Next JS Project",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andrew Miracle",
+  "license": "ISC"
+}

@@ -1,4 +1,4 @@
-import { normalize } from "path";
+// import { normalize } from "path";
 
 const person = {
   name: 'Andrew',
@@ -10,28 +10,30 @@ const person = {
   }
 }
 
-const { name = "Ruddy Mendy", age } = person;
+// const { name = "Ruddy Mendy", age } = person;
 
+// console.log(`${name} is ${age}`)
 
-console.log(`${name} is ${age}`)
+// // Desc person.location
+// const { city, temp, age: lAge } = person.location;
+// console.log(`${city} had been aged ${lAge} towards ${temp}`)
 
-
-// Desc person.location
-const { city, temp, age: lAge } = person.location;
-console.log(`${city} had been aged ${lAge} towards ${temp}`)
-
-
-// Desc for book club
+// // Desc for book club
 const book = {
   title: 'Ego is the Enemy',
   author: 'Ryan Holiday',
   publisher: {
-    name: 'Penguin' 
+    name: 'Penguin'
   }
 };
 
-let { name: publisherName = 'Self Published'} = book.publisher
-console.log(publisherName); // Penguin(valid name), Self-Published
+// let { name: publisherName = 'Self Published'} = book.publisher
+// console.log(publisherName); // Penguin(valid name), Self-Published
 
+// Array Destructuring
+let array = Object.keys(book)
+console.log(array)
 
-// 
+// const [ ...state] = array;
+const regular = [...array].join(' ')
+console.log(`You are printing ${regular}`);

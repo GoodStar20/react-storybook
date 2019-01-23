@@ -40,9 +40,9 @@ store.subscribe(() => {
 // I'd like to increment the count
 // Implement dispatch() function from redux This is passed as an argument on a store to dispatch an action type
 
-// store.dispatch({
-//   type: "INCREMENT"
-// });
+store.dispatch({
+  type: "INCREMENT"
+});
 
 store.dispatch(incrementCount()); 
 

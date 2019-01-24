@@ -1,39 +1,45 @@
-// import { normalize } from "path";
+//
+// Object destructuring
+//
 
-const person = {
-  name: 'Andrew',
-  age: 36,
-  location: {
-    city: 'Lagos',
-    temp: 92,
-    age: 43
-  }
-}
+// const person = {
+//   name: 'Andrew',
+//   age: 27,
+//   location: {
+//     city: 'Philadelphia',
+//     temp: 88
+//   }
+// };
 
-// const { name = "Ruddy Mendy", age } = person;
+// const { name: firstName = 'Anonymous', age } = person;
+// console.log(`${firstName} is ${age}.`);
 
-// console.log(`${name} is ${age}`)
+// const { city, temp: temperature } = person.location;
+// if (city && temperature) {
+//   console.log(`It's ${temperature} in ${city}.`);
+// }
 
-// // Desc person.location
-// const { city, temp, age: lAge } = person.location;
-// console.log(`${city} had been aged ${lAge} towards ${temp}`)
+// const book = {
+//   title: 'Ego is the Enemy',
+//   author: 'Ryan Holiday',
+//   publisher: {
+//     // name: 'Penguin'
+//   }
+// };
 
-// // Desc for book club
-const book = {
-  title: 'Ego is the Enemy',
-  author: 'Ryan Holiday',
-  publisher: {
-    name: 'Penguin'
-  }
-};
+// const { name: publisherName = 'Self-Published' } = book.publisher;
 
-// let { name: publisherName = 'Self Published'} = book.publisher
-// console.log(publisherName); // Penguin(valid name), Self-Published
+// console.log(publisherName); // Penguin, Self-Published
 
-// Array Destructuring
-let array = Object.keys(book)
-console.log(array)
+//
+// Array destructuring
+//
 
-// const [ ...state] = array;
-const regular = [...array].join(' ')
-console.log(`You are printing ${regular}`);
+// const address = ['1299 S Juniper Street', 'Philadelphia', 'Pennsylvania', '19147'];
+// const [, city, state = 'New York'] = address;
+// console.log(`You are in ${city} ${state}.`);
+
+const item = ['Coffee (iced)', '$3.00', '$3.50', '$3.75'];
+const [itemName, , mediumPrice] = item;
+
+console.log(`A medium ${itemName} costs ${mediumPrice}`);

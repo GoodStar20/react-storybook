@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 //import axios
-import axios from 'axios';
-
+// destructure the axios create into any identity we want
+import API from './Api';
 
 // export class
 export default class PersonList extends Component {
@@ -12,7 +12,8 @@ export default class PersonList extends Component {
 
   // fetch resource on component mounting
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/users')
+    // note that we export the axios.create class anonymously
+    API.get('https://jsonplaceholder.typicode.com/users')
       .then(res => {
         const persons = res.data;
         this.setState({ persons });

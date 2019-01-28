@@ -6,7 +6,10 @@ import EditExpensePage from '../components/EditExpensePage';
 import HelpPage from '../components/HelpPage';
 import NotFoundPage from '../components/NotFoundPage';
 import Header from '../components/Header';
+
+// axios implementation
 import PersonList from '../components/PersonList';
+import PersonListPost from '../components/PersonListPost'
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -16,6 +19,7 @@ const AppRouter = () => (
         <Route path="/" component={ExpenseDashboardPage} exact={true} />
         <Route path="/create" component={AddExpensePage} />
         <Route path="/persons" component={PersonList} />
+        <Route path="/personPost" component={PersonListPost} />
         <Route path="/edit/:id" component={EditExpensePage} />
         <Route path="/help" component={HelpPage} />
         <Route component={NotFoundPage} />

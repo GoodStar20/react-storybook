@@ -12,7 +12,7 @@ export default class PersonList extends Component {
 
   // fetch resource on component mounting
   componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`)
+    axios.get('https://jsonplaceholder.typicode.com/users')
       .then(res => {
         const persons = res.data;
         this.setState({ persons });

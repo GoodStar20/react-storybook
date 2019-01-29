@@ -12,7 +12,8 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ], 
+    "setupFiles": ["./src/setupTests.js"]
   },
   "dependencies": {
     "axios": "^0.18.0",

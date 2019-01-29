@@ -9,6 +9,11 @@
     "build": "webpack",
     "dev-server": "webpack-dev-server"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "babel-cli": "6.24.1",
@@ -33,5 +38,12 @@
     "validator": "8.0.0",
     "webpack": "3.1.0",
     "webpack-dev-server": "3.1.11"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.0.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^24.0.0"
   }
 }

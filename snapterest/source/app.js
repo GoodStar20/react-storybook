@@ -1,13 +1,153 @@
-import React from 'react';
-import { render } from 'react-dom';
+class ReactClass extends Component {
+  state = {
+  isHeaderHidden: false
+  }
+  handleClick = () => {
+  this.setState(prevState => ({
+  isHeaderHidden: !prevState.isHeaderHidden
+  }));
+  }
+  
+  render() {
+  const {
+  isHeaderHidden
+  } = this.state;
+  if (isHeaderHidden) {
+  return (
+  <button
+  className="btn ban-default"
+  onClick={this.handleClick}
+  >
+  Toggle Header
+  </button>
+  );
+  }
+  return (
+  <div>
+  <h1 className="header">Stateful React Component</h1>
+  <button
+  className="btn ban-default"
+  onClick={this.handleClick}
+  >
+  Toggle Header
+  </button>
+  </div>
+  );
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** import React from 'react';
+import { render, ReactDOM } from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 
 
-// const reactElement = React.createElement('h1', {className: 'header'}, 'Hungry Lions');
-// ReactDOM.render(
-//   reactElement,
-//   document.getElementById('react-application')
-// );
+const reactElement = React.createElement('h1', {className: 'header'}, 'Hungry Lions');
+ReactDOM.render(
+  reactElement,
+  document.getElementById('react-application')
+);
 
 
 // const h1 = React.createElement(
@@ -16,7 +156,7 @@ import ReactDOMServer from 'react-dom/server';
 //   'This is React'
 // );
 // const p = React.createElement(
-//   'p', 
+//   'p',
 //   { className: 'content', key: 'content' },
 //   'And that is how it works.'
 // );
@@ -59,3 +199,5 @@ const combined = React.createElement('ul', {className: 'list-items'}, reactFragm
 // );
 
 ReactDOMServer.renderToStaticMarkup(combined);
+
+**/

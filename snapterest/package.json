@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "webpack -p --config webpack.config.js",
-    "dev": "webpack -p --config webpack.config.js --watch",
+    "dev": "webpack -d --config webpack.config.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

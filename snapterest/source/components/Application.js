@@ -9,9 +9,19 @@ class Application extends Component {
     }
 
     componentWillMount() {
-      console.log('[Snapterest] StreamTweet: 1. Running componentWillMount()');
+      console.log('[Snapterest] StreamTweet: 1. Will Mount()');
+      // console.log("====>", componentDOMRepresentation.children)
     }
-    
+    componentDidMount = () => {
+      console.log('[Snapterest] StreamTweet: 3. Running componentDidMount()');
+      const componentDOMRepresentation = ReactDOM.findDOMNode(this);
+      window.snapterest.headerHtml = componentDOMRepresentation.children[0].outerHTML;
+      window.snapterest.tweetHtml = componentDOMRepresentation.children[1].outerHTML;
+      }
+
+      
+  
+
     addTweetToCollection = (tweet) => {
       const { collectionTweets } = this.state;
       collectionTweets[tweet.id] = tweet;
@@ -45,6 +55,7 @@ class Application extends Component {
       return (
         <div className="container-fluid">
           <div className="row">
+          <h1>Hello</h1>
             <div className="col-md-4 text-center">
               <Stream onAddTweetToCollection=
                 {addTweetToCollection} />

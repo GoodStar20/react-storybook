@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import Header from './Header';
-// import Tweet from './Tweet';
+import Header from './Header';
+import Tweet from './Tweet';
+
 class StreamTweet extends Component {
 
   // define other component lifecycle methods here
@@ -26,13 +27,14 @@ class StreamTweet extends Component {
 
     return (
       <section>
-        {/* <Header text={headerText} /> */}
-        {/* <Tweet
+        <Header text={headerText} /> */}
+        <Tweet
           tweet={tweet}
           onImageClick={onAddTweetToCollection}
-        /> */}
+        />
       </section>
     );
   }
 }
+
 export default StreamTweet;

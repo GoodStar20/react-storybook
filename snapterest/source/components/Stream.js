@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SnapkiteStreamClient from 'snapkite-stream-client'
 import StreamTweet from './StreamTweet'
-// import Header from './Header.react'
+import Header from './Header.js'
 
 class Stream extends Component {
   state = {
@@ -37,8 +37,7 @@ class Stream extends Component {
     }
 
     return (
-      <div>This makes sense</div>
-      // <Header text={headerText} />
+      <Header text={headerText} />
     );
   }
 

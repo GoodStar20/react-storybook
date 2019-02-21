@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Stream from './Stream';
-// import Collection from './Collection';
+import Collection from './Collection';
 
 
 class Application extends Component {
@@ -61,11 +61,11 @@ class Application extends Component {
                 {addTweetToCollection} />
             </div>
             <div className="col-md-8">
-              {/* <Collection
+              <Collection
                 tweets={this.state.collectionTweets}
                 onRemoveTweetFromCollection={removeTweetFromCollection}
                 onRemoveAllTweetsFromCollection={removeAllTweetsFromCollection}
-              /> */}
+              />
             </div>
           </div>
         </div>

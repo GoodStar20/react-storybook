@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Tweet from './Tweet';
-import TweetUtils from '../utils/TweetUtils';
+import TweetUtils from '../utils/TweetUtils'
 
 const listStyle = {
   padding: '0'

@@ -63,3 +63,9 @@ const combined = React.createElement('ul', {className: 'list-items'}, reactFragm
 
 ReactDOMServer.renderToStaticMarkup(combined);
 ```
+
+### Starting the Project
+
+First, make sure that Snapkite Engine that we installed and configured in Chapter 2, Installing Powerful Tools for Your Project, is running. Navigate to `~/snapkite-engine/` and run the following command: `npm start`
+
+Then, open a new Terminal window, navigate to ~/snapterest/ , and run this command: `npm start`

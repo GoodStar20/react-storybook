@@ -3,3 +3,5 @@ function getListOfTweetIds(tweets) {
 }
 
 module.exports.getListOfTweetIds = getListOfTweetIds;
+
+// export default getListOfTweetIds;

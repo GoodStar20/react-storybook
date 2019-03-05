@@ -19,7 +19,6 @@ describe('TweetUtils', () => {
     const actualListOfTweetIds = TweetUtils.getListOfTweetIds(
       tweetsMock
     )
-    // JEST Matcher to evaluate result
     expect(actualListOfTweetIds)
       .toEqual(expectedListOfTweetIds)
   })

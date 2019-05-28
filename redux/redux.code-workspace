@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "bank"
+		}
+	],
+	"settings": {
+		"prettier.jsxSingleQuote": true,
+		"editor.formatOnSave": true
+	}
+}

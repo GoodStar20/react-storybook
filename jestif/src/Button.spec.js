@@ -1,8 +1,9 @@
-import styled from 'styled-components';
-const Button = styled.button`
-  padding: 5px 10px;
-  background-color: green;
-  border: none;
-  color: white;
-`;
-export default Button;
+import React from 'react';
+import { matches } from '../test-utils';
+import Button from './Button';
+
+describe('Button', () => {
+  it('matches snapshot', () => {
+    matches(<Button>Submit</Button>);
+  });
+});

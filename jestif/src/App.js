@@ -15,7 +15,7 @@ function App() {
         <p>
           Welcome to testing in react
         </p>
-        <Button padding={'30px 50px'}>Start Learning</Button>
+        <Button duration={'2000'} padding={'30px 50px'}  vertical={false}>Start Learning</Button>
       </header>
     </div>
     </ThemeProvider>

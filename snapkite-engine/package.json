@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/snapkite/snapkite-engine",
   "dependencies": {
-    "mongoose": "^5.2.9",
+    "mongoose": "^5.7.5",
     "node-tweet-stream": "^1.6.0",
     "socket.io": "^2.1.1"
   }

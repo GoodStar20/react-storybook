@@ -4,7 +4,7 @@
   "description": "Next JS Project",
   "main": "index.js",
   "dependencies": {
-    "next": "^7.0.2",
+    "next": "^11.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
